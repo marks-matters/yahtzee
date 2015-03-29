@@ -1,0 +1,9 @@
+<form method="POST">
+	<ul>
+	{% for die in dice %}
+		<li>{{ die }} <input type="checkbox" name="{{ loop.index }}" value="{{ die }}"></li>
+	{% endfor %}
+	</ul>
+	
+	<input type="submit" value="Roll">
+</form>
