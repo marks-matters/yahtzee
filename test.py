@@ -1,16 +1,12 @@
 import unittest
-from ScoreCalculator import singles,three_of_a_kind,four_of_a_kind,yahtzee,fullhouse,long_straight,short_straight
+from ScoreCalculator import singles,three_of_a_kind,four_of_a_kind,yahtzee,fullhouse,long_straight,short_straight,chance
 
 class TestScoreCalculator(unittest.TestCase):
-	def test_ones(self):
+	def test_singles_ones(self):
 		dice_set = [1, 2, 3, 1, 5]
 		self.assertEqual(singles(dice_set,1), 2)
 
-	def test_twos(self):
-		dice_set = [2, 2, 4, 3, 2]
-		self.assertEqual(singles(dice_set,2), 6)
-
-	def test_twos(self):
+	def test_singles_twos(self):
 		dice_set = [2, 2, 4, 3, 2]
 		self.assertEqual(singles(dice_set,2), 6)
 
@@ -58,3 +54,7 @@ class TestScoreCalculator(unittest.TestCase):
 
 		dice_set = [6, 4, 2, 3, 5]
 		self.assertEqual(short_straight(dice_set), 30)
+
+	def test_chance(self):
+		dice_set = [4, 6, 6, 2, 2]
+		self.assertEqual(chance(dice_set), 12)

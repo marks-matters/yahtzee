@@ -60,14 +60,22 @@ def short_straight(dice_list):
 	straight_counter = 0
 	straight_list = []
 	dice_list.sort()
-	for i in range(3):
-		if dice_list[i] == dice_list[i+1]:
+	print dice_list
+	for i in range(4):
+		if dice_list[i] +1 == dice_list[i+1]:
 			straight_counter += 1
 	if straight_counter >= 3:
 		return 30
 	return 0
 
-
+def chance(dice_list):
+	if yahtzee(dice_list) = 50:					#max score 50
+		return 50
+	elif long_straight(dice_list) = 40:			#second biggest score 40
+		return 40
+	elif singles(dice_list) = 30:			#need a function that evaluates the largest score but also probability
+		return 30
+	elif full
 
 
 
