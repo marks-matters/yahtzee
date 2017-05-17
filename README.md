@@ -1,6 +1,6 @@
 # Yahtzee
 
-An attempt to recreate the dice game into a browser version.
+An attempt to recreate the dice game into a browser.
 
 Author: Mark Jennings
 Contributor: Francesco Della Vedova
